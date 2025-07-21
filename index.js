@@ -3,7 +3,6 @@ const { Client, GatewayIntentBits, EmbedBuilder } = require('discord.js');
 
 const STATUS_CHANNEL_ID = 'STATUS Channel ID'; // Kanal für Status-Embed
 
-// Array mit Objekten: { id: Bot-ID, name: Bot-Name }
 const MONITORED_BOTS = [
   { id: 'Application ID', name: 'Alexos' },
   // weitere Bots hier hinzufügen
@@ -13,7 +12,7 @@ const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
     GatewayIntentBits.GuildMembers,
-    GatewayIntentBits.GuildPresences, // wichtig für Status
+    GatewayIntentBits.GuildPresences, 
   ],
 });
 
@@ -30,7 +29,7 @@ async function updateStatus() {
       const member = await guild.members.fetch(bot.id).catch(() => null);
       if (member) {
         status = member.presence?.status === 'offline' || !member.presence ? '⚪ Offline' : `🟢 ${member.presence.status}`;
-        break; // Bot gefunden, Status ermittelt
+        break; 
       }
     }
 
