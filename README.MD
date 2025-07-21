@@ -12,6 +12,7 @@ Ein minimalistischer Discord-Bot, der einfach online geht und für bestimmte Auf
 
 ---
 ## ENV Datei 
+
 ```BOT_TOKEN=
 MAIN_BOT_ID=```
 
