@@ -1,6 +1,7 @@
 # 🤖 Discord Status Bot
 
-Ein minimalistischer Discord-Bot, der einfach online geht und für bestimmte Aufgaben bereitsteht – ohne API-Abfragen, ohne Aktivitäten. Ideal für einfache Bots, die einfach nur laufen sollen.
+Ein minimalistischer Discord-Bot, der einfach online geht und für bestimmte Aufgaben bereitsteht – **ohne API-Abfragen**, **ohne Aktivitäten**.  
+Ideal für einfache Bots, die nur online sein sollen.
 
 ---
 
@@ -11,16 +12,11 @@ Ein minimalistischer Discord-Bot, der einfach online geht und für bestimmte Auf
 - 💡 Kein unnötiger Code – schnell & leichtgewichtig
 
 ---
-## ENV Datei 
 
-```BOT_TOKEN=
-MAIN_BOT_ID=```
+## ⚙️ ENV-Datei
 
-## 🛠️ Installation
+Erstelle eine Datei namens `.env` im Hauptverzeichnis des Projekts mit folgendem Inhalt:
 
-1. Repository klonen:
-
-```bash
-git clone https://github.com/alexosbanana/Simple-Status-Discord-Bot
-cd discord-status-bot
-npm install 
+```env
+BOT_TOKEN=dein_discord_bot_token
+MAIN_BOT_ID=deine_discord_client_id
