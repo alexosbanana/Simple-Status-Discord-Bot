@@ -11,6 +11,9 @@ Ein minimalistischer Discord-Bot, der einfach online geht und für bestimmte Auf
 - 💡 Kein unnötiger Code – schnell & leichtgewichtig
 
 ---
+## ENV Datei 
+```BOT_TOKEN=
+MAIN_BOT_ID=```
 
 ## 🛠️ Installation
 
